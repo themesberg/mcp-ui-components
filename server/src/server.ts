@@ -1,5 +1,5 @@
 import { McpServer } from "skybridge/server";
-import { basicAnswerWidget } from "./widgets-register";
+import { basicAnswerWidget } from "./widgets/basic-answer-server";
 
 const server = new McpServer(
   {

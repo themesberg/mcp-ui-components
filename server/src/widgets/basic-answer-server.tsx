@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-// Magic 8 Ball widget configuration
+// Basic Answer widget configuration
 export const basicAnswerWidget = {
   name: "basic-answer" as const,
   metadata: {
@@ -28,6 +28,3 @@ export const basicAnswerWidget = {
     }
   },
 };
-
-// Add more widget configurations here
-// export const anotherWidget = { ... };
