@@ -1,6 +1,10 @@
-# Skybridge Starter
+# MCP UI Kit starter for MCP and ChatGPT apps
 
-A minimal TypeScript template for building ChatGPT and MCP Apps with widget rendering.
+This is an open-source library of UI components, widgets and examples that you can use to build MCP and ChatGPT apps for the major AI providers like Claude, ChatGPT, Gemini, and more. The examples include basic text components, radio, checkbox selection prompts, charts, e-commerce examples, qr code generation, tables, and more.
+
+The components are all based on the open-source UI component library called [Flowbite](https://github.com/themesberg/flowbite) and you can also update the `index.css` file to [update the theming](https://flowbite.com/docs/customize/theming/) from the default setting to minimal, mono, playful, enterprise or create your own.
+
+## MCP Widgets available
 
 ## Getting Started
 
@@ -8,6 +12,9 @@ A minimal TypeScript template for building ChatGPT and MCP Apps with widget rend
 
 - Node.js 24+
 - HTTP tunnel such as [ngrok](https://ngrok.com/download)
+- [Flowbite](https://flowbite.com/) for UI components
+- [Tailwind CSS](https://tailwindcss.com/) for CSS framework
+- [React](https://react.dev/) for React stuff
 
 ### Local Development
 
@@ -50,21 +57,6 @@ ngrok http 3000
 ```
 - In ChatGPT, navigate to **Settings → Connectors → Create** and add the forwarding URL provided by ngrok suffixed with `/mcp` (e.g. `https://3785c5ddc4b6.ngrok-free.app/mcp`)
 
-### Create your first widget
-
-#### 1. Add a new widget
-
-- Register a widget in `server/server.ts` with a unique name (e.g., `my-widget`)
-- Create a matching React component at `web/src/widgets/my-widget.tsx`. The file name must match the widget name exactly
-
-#### 2. Edit widgets with Hot Module Replacement (HMR)
-
-Edit and save components in `web/src/widgets/` — changes appear instantly in the host
-
-#### 3. Edit server code
-
-Modify files in `server/` and reload your ChatGPT connector in **Settings → Connectors → [Your connector] → Reload**
-
 ## Deploy to Production
 
 - Use [Alpic](https://alpic.ai/) to deploy your OpenAI App to production
@@ -75,3 +67,5 @@ Modify files in `server/` and reload your ChatGPT connector in **Settings → Co
 - [Apps SDK Documentation](https://developers.openai.com/apps-sdk)
 - [Model Context Protocol Documentation](https://modelcontextprotocol.io/)
 - [Alpic Documentation](https://docs.alpic.ai/)
+- [Flowbite UI components](https://flowbite.com/docs/getting-started/quickstart/)
+- [Tailwind CSS](https://tailwindcss.com/)
