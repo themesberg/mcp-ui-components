@@ -3,7 +3,9 @@ import { basicTextWidget } from "./widgets/basic-text-server";
 import { checkboxOptionsWidget } from "./widgets/checkbox-options-server";
 import { dataTableWidget } from "./widgets/data-table-server";
 import { ecomCarouselWidget } from "./widgets/e-commerce-server";
+import { flowbiteCtaWidget } from "./widgets/flowbite-cta-server";
 import { lineChartWidget } from "./widgets/line-chart-server";
+import { qrCodeWidget } from "./widgets/qr-code-server";
 import { radioOptionsWidget } from "./widgets/radio-options-server";
 
 const server = new McpServer(
@@ -48,6 +50,18 @@ const server = new McpServer(
     dataTableWidget.metadata,
     dataTableWidget.toolConfig,
     dataTableWidget.handler
+  )
+  .registerWidget(
+    qrCodeWidget.name,
+    qrCodeWidget.metadata,
+    qrCodeWidget.toolConfig,
+    qrCodeWidget.handler
+  )
+  .registerWidget(
+    flowbiteCtaWidget.name,
+    flowbiteCtaWidget.metadata,
+    flowbiteCtaWidget.toolConfig,
+    flowbiteCtaWidget.handler
   );
 
 export default server;
