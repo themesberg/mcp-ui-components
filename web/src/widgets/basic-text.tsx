@@ -3,8 +3,8 @@ import "@/index.css";
 import { mountWidget } from "skybridge/web";
 import { useToolInfo } from "../helpers";
 
-function BasicAnswerWidget() {
-  const { input, output } = useToolInfo<"basic-answer">();
+function BasicTextWidget() {
+  const { input, output } = useToolInfo<"basic-text">();
   if (!output) {
     return (
       <div role="status">
@@ -25,6 +25,6 @@ function BasicAnswerWidget() {
   );
 }
 
-export default BasicAnswerWidget;
+export default BasicTextWidget;
 
-mountWidget(<BasicAnswerWidget />);
+mountWidget(<BasicTextWidget />);

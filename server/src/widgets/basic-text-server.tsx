@@ -1,13 +1,13 @@
 import { z } from "zod";
 
 // Basic Answer widget configuration
-export const basicAnswerWidget = {
-  name: "basic-answer" as const,
+export const basicTextWidget = {
+  name: "basic-text" as const,
   metadata: {
-    description: "Basic Answer",
+    description: "Basic Text",
   },
   toolConfig: {
-    description: "Show an answer to a question.",
+    description: "Show a text message based on a question.",
     inputSchema: {
       question: z.string().describe("The user's question."),
     },

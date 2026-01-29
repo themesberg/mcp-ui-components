@@ -1,5 +1,5 @@
 import { McpServer } from "skybridge/server";
-import { basicAnswerWidget } from "./widgets/basic-answer-server";
+import { basicTextWidget } from "./widgets/basic-text-server";
 import { checkboxOptionsWidget } from "./widgets/checkbox-options-server";
 import { ecomCarouselWidget } from "./widgets/e-commerce-server";
 import { lineChartWidget } from "./widgets/line-chart-server";
@@ -13,10 +13,10 @@ const server = new McpServer(
   { capabilities: {} }
 )
   .registerWidget(
-    basicAnswerWidget.name,
-    basicAnswerWidget.metadata,
-    basicAnswerWidget.toolConfig,
-    basicAnswerWidget.handler
+    basicTextWidget.name,
+    basicTextWidget.metadata,
+    basicTextWidget.toolConfig,
+    basicTextWidget.handler
   )
   .registerWidget(
     radioOptionsWidget.name,
