@@ -1,5 +1,14 @@
 import { z } from "zod";
-import { websiteTrafficData, type WebsiteKey } from "../data/chart-data";
+import { websiteTrafficData, type WebsiteKey, type DateRangeKey } from "../data/chart-data";
+
+// Date range labels for display
+const dateRangeLabels: Record<DateRangeKey, string> = {
+  "last-24-hours": "Last 24 hours",
+  "last-7-days": "Last 7 days",
+  "last-30-days": "Last 30 days",
+  "last-90-days": "Last 90 days",
+  "last-year": "Last year",
+};
 
 // Line Chart widget configuration
 export const lineChartWidget = {
@@ -8,18 +17,22 @@ export const lineChartWidget = {
     description: "Line Chart Display",
   },
   toolConfig: {
-    description: "Display website traffic statistics for the last 30 days.",
+    description: "Display website traffic statistics for a selected date range.",
     inputSchema: {
       website: z
         .enum(["flowbite.com", "themesberg.com"])
         .describe("Select a website to view traffic statistics"),
+      dateRange: z
+        .enum(["last-24-hours", "last-7-days", "last-30-days", "last-90-days", "last-year"])
+        .describe("Select a date range for the statistics"),
     },
   },
-  handler: async ({ website }: { website: WebsiteKey }) => {
+  handler: async ({ website, dateRange }: { website: WebsiteKey; dateRange: DateRangeKey }) => {
     try {
-      const chartData = websiteTrafficData[website];
+      const chartData = websiteTrafficData[website][dateRange];
+      const dateRangeLabel = dateRangeLabels[dateRange];
       return {
-        structuredContent: { website, chartData },
+        structuredContent: { website, dateRange, dateRangeLabel, chartData },
         content: [],
         isError: false,
       };
