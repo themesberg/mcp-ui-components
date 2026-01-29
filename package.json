@@ -1,7 +1,6 @@
 {
   "name": "mcp-ui-kit",
   "version": "0.0.1",
-  "private": true,
   "description": "MCP UI Toolkit based on Skybdrige Framework and Flowbite UI components",
   "type": "module",
   "scripts": {
