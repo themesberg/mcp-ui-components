@@ -4,7 +4,23 @@ This is an open-source library of UI components, widgets and examples that you c
 
 The components are all based on the open-source UI component library called [Flowbite](https://github.com/themesberg/flowbite) and you can also update the `index.css` file to [update the theming](https://flowbite.com/docs/customize/theming/) from the default setting to minimal, mono, playful, enterprise or create your own.
 
-## MCP Widgets available
+## MCP Widgets
+
+| Basic text | Checkbox options |
+|:---:|:---:|
+| ![Basic text](https://flowbite.s3.us-east-1.amazonaws.com/mcp-ui-kit/mcp-basic-text.png) | ![Checkbox options](https://flowbite.s3.us-east-1.amazonaws.com/mcp-ui-kit/mcp-checkbox.png) |
+
+| Radio options | Data table |
+|:---:|:---:|
+| ![Radio options](https://flowbite.s3.us-east-1.amazonaws.com/mcp-ui-kit/mcp-radio.png) | ![Data table](https://flowbite.s3.us-east-1.amazonaws.com/mcp-ui-kit/mcp-data-table.png) |
+
+| E-commerce | Qr code |
+|:---:|:---:|
+| ![E-commerce](https://flowbite.s3.us-east-1.amazonaws.com/mcp-ui-kit/mcp-ecommerce.png) | ![Qr code](https://flowbite.s3.us-east-1.amazonaws.com/mcp-ui-kit/mcp-qr-code.png) |
+
+| Charts |
+|:---:|
+| ![Charts](https://flowbite.s3.us-east-1.amazonaws.com/mcp-ui-kit/mcp-chart.png) |
 
 ## Getting Started
 
