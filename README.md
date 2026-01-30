@@ -55,13 +55,36 @@ This command starts an Express server on port 3000. This server packages:
 - a React application on Vite HMR dev server (the UI elements to be displayed in the host)
 - a set of widget examples built with Flowbite UI components
 
-3. Connect to ChatGPT
+3. Connect to AI clients like ChatGPT, Gemini, and Claude
 
-- ChatGPT requires connectors to be publicly accessible. To expose your server on the Internet, run:
+Using Ngrok we need to create an accessible connector:
+
 ```bash
 ngrok http 3000
 ```
-- In ChatGPT, navigate to **Settings → Connectors → Create** and add the forwarding URL provided by ngrok suffixed with `/mcp` (e.g. `https://3785c5ddc4b6.ngrok-free.app/mcp`)
+
+This will generate an accessible server like this:
+
+```
+https://3785c5ddc4b6.ngrok-free.app/mcp
+```
+
+Note: make sure you add the `/mcp` folder to the URL when registering an app.
+
+Check out the following guides to learn how to integrate with each AI client:
+
+<details>
+<summary><b>Install in ChatGPT</b></summary>
+<ol>
+<li>Navigate to Settings > Connectors</li>
+<li>Scroll down and click on Advanced Settings</li>
+<li>Enable Developer mode</li>
+<li>Go back to the Settings > Connectors page, and click on Create in the Browser Connectors section</li>
+<li>Add a custom connector with the MCP Server URL: `https://3785c5ddc4b6.ngrok-free.app/mcp`</li>
+<li>Click on Create to add the MCP server as a Connector</li>
+<li>To use your newly created connector in the chat, click + then More and select it.</li>
+
+</details>
 
 ## Theming
 
