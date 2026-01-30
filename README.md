@@ -134,6 +134,106 @@ MCP servers used by Gemini CLI are configured in settings.json. More details [he
 
 </details>
 
+<details>
+<summary><b>Install in Cursor</b></summary>
+
+Cursor stores MCP servers configuration through a `mcp.json` file. More details [here](https://docs.cursor.com/context/model-context-protocol).
+
+1. Open (or create) your `mcp.json` file.
+2. Add this MCP server right under `mcpServers`:
+
+```json
+{
+  "mcpServers": {
+    "<server-name>": {
+      "type": "http",
+      "url": "[NGROK_FORWARDING_URL]/mcp"
+    }
+  }
+}
+```
+
+3. Once saved, Cursor Agent automatically uses this MCP server tools when relevant.
+
+</details>
+
+<details>
+<summary><b>Install in VS Code</b></summary>
+
+VS Code stores MCP servers configuration in a `mcp.json` file. More details [here](https://code.visualstudio.com/docs/copilot/chat/mcp-servers).
+
+1. Open (or create) your `.vscode/mcp.json` file.
+2. Add this MCP server under `servers`:
+
+```json
+{
+  "servers": {
+    "<server-name>": {
+      "type": "http",
+      "url": "[NGROK_FORWARDING_URL]/mcp"
+    }
+  }
+}
+```
+
+3. Once you have added the MCP server, you can use its tools in the Chat view (⌃⌘I).
+
+</details>
+
+<details>
+<summary><b>Install in Claude Code</b></summary>
+
+MCP servers added to Claude Code are stored in `~/.claude.json`. More details [here](https://docs.anthropic.com/en/docs/claude-code/mcp).
+
+To install this MCP server, run the following command in your terminal:
+
+```bash
+claude mcp add --transport http <server-name> "[NGROK_FORWARDING_URL]/mcp"
+```
+
+In the Claude Code terminal UI, use `/mcp` to view actively connected MCP servers. You should see your recently connected MCP server and can use it right away.
+
+</details>
+
+<details>
+<summary><b>Install in Mistral AI</b></summary>
+
+1. Open the side panel and expand **Intelligence > Connectors**
+2. Click **+ Add Connector** on the right side of the page
+3. In the MCP Connectors directory, click the **Custom MCP Connector** tab
+4. Enter a Connector Name and the following Connector Server URL: `[NGROK_FORWARDING_URL]/mcp`
+5. Finish configuring your connector and click **Create**
+6. To use the connector, click the **Tools** button below the chat input and enable it in the Connectors section.
+
+</details>
+
+<details>
+<summary><b>Install in Codex</b></summary>
+
+MCP configuration for Codex is stored in `~/.codex/config.toml` and is shared between the CLI and the IDE extension.
+
+**Option 1 — Configure via the Codex CLI**
+
+Run the following command in your terminal:
+
+```bash
+codex mcp add <server-name> --url "[NGROK_FORWARDING_URL]/mcp"
+```
+
+**Option 2 — Modify the Codex config file directly**
+
+1. Open `~/.codex/config.toml`.
+2. Add the following snippet to your `config.toml` file:
+
+```toml
+[mcp_servers."<server-name>"]
+url = "[NGROK_FORWARDING_URL]/mcp"
+```
+
+In the Codex terminal UI, use `/mcp` to view actively connected MCP servers. You should see your recently connected MCP server and can use it right away.
+
+</details>
+
 ## Theming
 
 [Flowbite theming](https://flowbite.com/docs/customize/theming/) allows you to update the appearance of the UI components by updating the `index.css` styles.
