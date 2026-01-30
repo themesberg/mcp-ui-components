@@ -87,6 +87,51 @@ Check out the following guides to learn how to integrate with each AI client:
 <li>To use your newly created connector in the chat, click + then More and select it.</li>
 </details>
 
+<details>
+<summary><b>Install in Claude Web</b></summary>
+<ol>
+<li>Navigate to Settings > Connectors</li>
+<li>Locate the Connectors section</li>
+<li>Click Add custom connector at the bottom of the section</li>
+<li>Add your connector's remote MCP server URL: [NGROK_FORWARDING_URL]/mcp</li>
+<li>inish configuring your connector and click Add</li>
+<li>To enable connectors, use the Search and tools button on the lower left of the chat.</li>
+</details>
+
+<details>
+<summary><b>Install in Gemini CLI</b></summary>
+
+**Option 1 — Configure via the Gemini CLI**
+
+Run the following command in your terminal:
+
+```bash
+gemini mcp add --transport http <server-name> "[NGROK_FORWARDING_URL]/mcp"
+```
+
+Use `/mcp` in the Gemini CLI terminal to view your recently added MCP server status and discovered tools.
+
+**Option 2 — Configure via settings.json directly**
+
+MCP servers used by Gemini CLI are configured in settings.json. More details [here](https://github.com/google-gemini/gemini-cli).
+
+1. Open `~/.gemini/settings.json` (user) or `.gemini/settings.json` (project).
+2. Add your server under `mcpServers`:
+
+```json
+{
+  "mcpServers": {
+    "<server-name>": {
+      "httpUrl": "[NGROK_FORWARDING_URL]/mcp"
+    }
+  }
+}
+```
+
+3. Restart the Gemini CLI (or start a new session), then run `/mcp` to confirm it's connected.
+
+</details>
+
 ## Theming
 
 [Flowbite theming](https://flowbite.com/docs/customize/theming/) allows you to update the appearance of the UI components by updating the `index.css` styles.
