@@ -76,7 +76,10 @@ Note: make sure you add the `/mcp` folder to the URL when registering an app.
 Check out the following guides to learn how to integrate with each AI client:
 
 <details>
-<summary><b>Install in ChatGPT</b></summary>
+<summary>
+  <img src="https://github.com/user-attachments/assets/4796fcfc-1ddf-4f68-82d0-030a2af62b17" width="16">
+  <b>Install in ChatGPT</b>
+</summary>
 
 1. Navigate to **Settings > Connectors**
 2. Scroll down and click on **Advanced Settings**
@@ -89,7 +92,7 @@ Check out the following guides to learn how to integrate with each AI client:
 </details>
 
 <details>
-<summary><b>Install in Claude Web</b></summary>
+<summary><img src="https://github.com/user-attachments/assets/7e9c6105-70c4-41a4-9f45-15dbea5b561b" width="16"><b> Install in Claude Web</b></summary>
 
 1. Navigate to **Settings > Connectors**
 2. Locate the **Connectors** section
@@ -101,7 +104,7 @@ Check out the following guides to learn how to integrate with each AI client:
 </details>
 
 <details>
-<summary><b>Install in Gemini CLI</b></summary>
+<summary><img src="https://github.com/user-attachments/assets/351ed7b9-58cf-4017-86b3-b3e02bfd3237" width="16"> <b>Install in Gemini CLI</b></summary>
 
 **Option 1 — Configure via the Gemini CLI**
 
@@ -135,7 +138,7 @@ MCP servers used by Gemini CLI are configured in settings.json. More details [he
 </details>
 
 <details>
-<summary><b>Install in Cursor</b></summary>
+<summary><img src="https://github.com/user-attachments/assets/51c50bc4-aa7b-483e-b2e4-03c1c866d164" width="16"> <b>Install in Cursor</b></summary>
 
 Cursor stores MCP servers configuration through a `mcp.json` file. More details [here](https://docs.cursor.com/context/model-context-protocol).
 
@@ -158,7 +161,7 @@ Cursor stores MCP servers configuration through a `mcp.json` file. More details 
 </details>
 
 <details>
-<summary><b>Install in VS Code</b></summary>
+<summary><img src="https://github.com/user-attachments/assets/26d49b63-b6f2-47b0-88d6-cdff1faae444" width="16"> <b>Install in VS Code</b></summary>
 
 VS Code stores MCP servers configuration in a `mcp.json` file. More details [here](https://code.visualstudio.com/docs/copilot/chat/mcp-servers).
 
@@ -181,7 +184,7 @@ VS Code stores MCP servers configuration in a `mcp.json` file. More details [her
 </details>
 
 <details>
-<summary><b>Install in Claude Code</b></summary>
+<summary><img src="https://github.com/user-attachments/assets/7e9c6105-70c4-41a4-9f45-15dbea5b561b" width="16"> <b>Install in Claude Code</b></summary>
 
 MCP servers added to Claude Code are stored in `~/.claude.json`. More details [here](https://docs.anthropic.com/en/docs/claude-code/mcp).
 
@@ -196,7 +199,7 @@ In the Claude Code terminal UI, use `/mcp` to view actively connected MCP server
 </details>
 
 <details>
-<summary><b>Install in Mistral AI</b></summary>
+<summary><img src="https://github.com/user-attachments/assets/9932918e-e636-4bf8-9483-38b2492ccdef" width="16"> <b>Install in Mistral AI</b></summary>
 
 1. Open the side panel and expand **Intelligence > Connectors**
 2. Click **+ Add Connector** on the right side of the page
