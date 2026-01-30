@@ -59,7 +59,7 @@ function DataTableWidget() {
 
   if (isPending) {
     return (
-      <div className={`${theme} bg-neutral-primary p-6`}>
+      <div className={`${theme} bg-neutral-primary`}>
         <div role="status" className="flex items-center justify-center">
           <svg
             aria-hidden="true"
@@ -85,14 +85,14 @@ function DataTableWidget() {
 
   if (!output) {
     return (
-      <div className={`${theme} bg-neutral-primary p-6`}>
+      <div className={`${theme} bg-neutral-primary`}>
         <p className="text-body">No table data available.</p>
       </div>
     );
   }
 
   return (
-    <div className={`${theme} bg-neutral-primary p-6`}>
+    <div className={`${theme} bg-neutral-primary`}>
       {/* Filters Section */}
       <div className="flex flex-col sm:flex-row gap-4 mb-4">
         {/* Search Input with Autocomplete */}

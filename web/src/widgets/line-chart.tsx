@@ -128,7 +128,7 @@ function LineChartWidget() {
   };
 
   return (
-    <div className={`${theme} bg-neutral-primary p-6 rounded-lg`}>
+    <div className={`${theme} bg-neutral-primary rounded-lg`}>
       <div className="mb-4">
         <h3 className="text-xl font-semibold text-heading">
           {output.dateRangeLabel} traffic for {output.website}

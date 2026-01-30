@@ -10,7 +10,7 @@ function FlowbiteCtaWidget() {
 
   if (isPending) {
     return (
-      <div className={`${theme} bg-neutral-primary p-6`}>
+      <div className={`${theme} bg-neutral-primary`}>
         <div role="status" className="flex items-center justify-center">
           <svg
             aria-hidden="true"
@@ -36,7 +36,7 @@ function FlowbiteCtaWidget() {
 
   if (!output) {
     return (
-      <div className={`${theme} bg-neutral-primary p-6`}>
+      <div className={`${theme} bg-neutral-primary`}>
         <p className="text-body">Unable to load content.</p>
       </div>
     );
