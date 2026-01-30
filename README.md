@@ -77,27 +77,27 @@ Check out the following guides to learn how to integrate with each AI client:
 
 <details>
 <summary><b>Install in ChatGPT</b></summary>
-<ol>
-<li>Navigate to Settings > Connectors</li>
-<li>Scroll down and click on Advanced Settings</li>
-<li>Enable Developer mode</li>
-<li>Go back to the Settings > Connectors page, and click on Create in the Browser Connectors section</li>
-<li>Add a custom connector with the MCP Server URL: [NGROK_FORWARDING_URL]/mcp</li>
-<li>Click on Create to add the MCP server as a Connector</li>
-<li>To use your newly created connector in the chat, click + then More and select it.</li>
-</ol>
+
+1. Navigate to **Settings > Connectors**
+2. Scroll down and click on **Advanced Settings**
+3. Enable **Developer mode**
+4. Go back to the **Settings > Connectors** page, and click on **Create** in the Browser Connectors section
+5. Add a custom connector with the MCP Server URL: `[NGROK_FORWARDING_URL]/mcp`
+6. Click on **Create** to add the MCP server as a Connector
+7. To use your newly created connector in the chat, click **+** then **More** and select it.
 
 </details>
 
 <details>
 <summary><b>Install in Claude Web</b></summary>
-<ol>
-<li>Navigate to Settings > Connectors</li>
-<li>Locate the Connectors section</li>
-<li>Click Add custom connector at the bottom of the section</li>
-<li>Add your connector's remote MCP server URL: [NGROK_FORWARDING_URL]/mcp</li>
-<li>inish configuring your connector and click Add</li>
-<li>To enable connectors, use the Search and tools button on the lower left of the chat.</li>
+
+1. Navigate to **Settings > Connectors**
+2. Locate the **Connectors** section
+3. Click **Add custom connector** at the bottom of the section
+4. Add your connector's remote MCP server URL: `[NGROK_FORWARDING_URL]/mcp`
+5. Finish configuring your connector and click **Add**
+6. To enable connectors, use the **Search and tools** button on the lower left of the chat.
+
 </details>
 
 <details>
