@@ -76,7 +76,7 @@ Note: make sure you add the `/mcp` folder to the URL when registering an app.
 Check out the following guides to learn how to integrate with each AI client:
 
 <details>
-<summary><b>Install in ChatGPT</b></summary>
+<summary><b><img src="https://mcp-ui-kit-c89068fd.alpic.live/try/openai-light.png" width="18"> Install in ChatGPT</b></summary>
 <ol>
 <li>Navigate to Settings > Connectors</li>
 <li>Scroll down and click on Advanced Settings</li>
@@ -85,6 +85,8 @@ Check out the following guides to learn how to integrate with each AI client:
 <li>Add a custom connector with the MCP Server URL: [NGROK_FORWARDING_URL]/mcp</li>
 <li>Click on Create to add the MCP server as a Connector</li>
 <li>To use your newly created connector in the chat, click + then More and select it.</li>
+</ol>
+
 </details>
 
 <details>
