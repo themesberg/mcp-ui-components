@@ -61,6 +61,38 @@ ngrok http 3000
 ```
 - In ChatGPT, navigate to **Settings → Connectors → Create** and add the forwarding URL provided by ngrok suffixed with `/mcp` (e.g. `https://3785c5ddc4b6.ngrok-free.app/mcp`)
 
+## Theming
+
+[Flowbite theming](https://flowbite.com/docs/customize/theming/) allows you to update the appearance of the UI components by updating the `index.css` styles.
+
+Here are a couple of predefined styles (default, minimal, enterprise, playful, and mono) from Flowbite:
+
+```css
+/* choose one of the following */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "flowbite/src/themes/default";
+
+/* MINIMAL THEME
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "flowbite/src/themes/minimal";
+*/
+
+/* ENTERPRISE THEME
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "flowbite/src/themes/enterprise";
+*/
+
+/* PLAYFUL THEME
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+@import "flowbite/src/themes/playful";
+*/
+
+/* MONO THEME
+@import "flowbite/src/themes/mono";
+*/
+```
+
 ## Resources
 
 - [Apps SDK Documentation](https://developers.openai.com/apps-sdk)
