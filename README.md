@@ -53,7 +53,7 @@ This command starts an Express server on port 3000. This server packages:
 - a React application on Vite HMR dev server (the UI elements to be displayed in the host)
 - a set of widget examples built with Flowbite UI components
 
-#### 3. Connect to ChatGPT
+3. Connect to ChatGPT
 
 - ChatGPT requires connectors to be publicly accessible. To expose your server on the Internet, run:
 ```bash
