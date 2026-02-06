@@ -6,7 +6,7 @@ This is an open-source library of UI components, widgets and examples that you c
 
 The components are based on the [Flowbite UI framework](https://github.com/themesberg/flowbite) and the [SkyBridge framework](https://github.com/alpic-ai/skybridge) for building MCP apps.
 
-https://github.com/user-attachments/assets/19626e5d-0181-4a8f-98aa-fb51ac2adbc7
+https://github.com/user-attachments/assets/ae139fb3-a2ec-436b-b4a6-9b25064918cd
 
 - [Live demo](https://mcp-ui-kit-c89068fd.alpic.live/try)
 
